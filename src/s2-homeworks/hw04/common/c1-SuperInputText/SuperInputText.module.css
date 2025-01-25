@@ -1,20 +1,37 @@
 .input:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .input {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .inputWrapper {
+    margin-bottom: 15px;
 }
 
 .superInput {
+    border-color: #28a745;
 }
 
 .errorInput {
+    border-color: #dc3545;
 }
 
 .errorInput:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
 }
 
 .error {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
 }
