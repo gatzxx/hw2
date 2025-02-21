@@ -1,15 +1,46 @@
 .radio {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
 }
 
 .radio::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease;
 }
 
+.radio:checked {
+    border-color: #007bff;
+}
 
 .radio:checked::before {
+    background-color: #007bff;
 }
 
 .label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px;
 }
 
 .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
